@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txt_ourteam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Our Team"
+        android:textSize="30sp"
+        android:textColor="#1B1A1A"
+        app:layout_constraintVertical_bias="0.025"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_image1"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/john"
+        android:layout_marginTop="20dp"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintTop_toBottomOf="@id/txt_ourteam"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/img_image2"/>
+
+    <ImageView
+        android:id="@+id/img_image2"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/rose"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_ourteam"
+        app:layout_constraintLeft_toRightOf="@id/img_image1"
+        app:layout_constraintRight_toLeftOf="@id/img_image3"/>
+
+    <ImageView
+        android:id="@+id/img_image3"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/milar"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_ourteam"
+        app:layout_constraintLeft_toRightOf="@id/img_image2"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_employee1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Adams G"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:textSize="20sp"
+        android:textColor="#424040"
+        app:layout_constraintTop_toBottomOf="@id/img_image1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txt_employee2"/>
+
+    <TextView
+        android:id="@+id/txt_employee2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Betty L"
+        android:textSize="20sp"
+        android:textColor="#424040"
+        app:layout_constraintTop_toBottomOf="@id/img_image1"
+        app:layout_constraintLeft_toRightOf="@id/txt_employee1"
+        app:layout_constraintRight_toRightOf="@id/txt_employee3"/>
+
+    <TextView
+        android:id="@+id/txt_employee3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roberts"
+        android:textSize="20sp"
+        android:textColor="#424040"
+        app:layout_constraintTop_toBottomOf="@id/img_image1"
+        app:layout_constraintLeft_toRightOf="@id/txt_employee2"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_position1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Executive Officer"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:textSize="18sp"
+        android:textColor="#5F5B5B"
+        app:layout_constraintTop_toBottomOf="@id/txt_employee1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txt_position2"/>
+
+    <TextView
+        android:id="@+id/txt_position2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marketing"
+        android:textSize="18sp"
+        android:textColor="#5F5B5B"
+        app:layout_constraintTop_toBottomOf="@id/txt_employee1"
+        app:layout_constraintLeft_toRightOf="@id/txt_position1"
+        app:layout_constraintRight_toLeftOf="@id/txt_position3"/>
+
+    <TextView
+        android:id="@+id/txt_position3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Business Analyst"
+        android:textSize="18sp"
+        android:textColor="#5F5B5B"
+        app:layout_constraintTop_toBottomOf="@id/txt_employee1"
+        app:layout_constraintLeft_toRightOf="@id/txt_position2"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/img_image4"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/selena"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_position1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/img_image5"/>
+
+    <ImageView
+        android:id="@+id/img_image5"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/moe"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_position1"
+        app:layout_constraintLeft_toRightOf="@id/img_image4"
+        app:layout_constraintRight_toLeftOf="@id/img_image6"/>
+
+    <ImageView
+        android:id="@+id/img_image6"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/lydia"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_position1"
+        app:layout_constraintLeft_toRightOf="@id/img_image5"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_employee4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miller W"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:textSize="20sp"
+        android:textColor="#424040"
+        app:layout_constraintTop_toBottomOf="@id/img_image4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txt_employee5" />
+
+    <TextView
+        android:id="@+id/txt_employee5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kevin John"
+        android:textSize="20sp"
+        android:textColor="#424040"
+        app:layout_constraintTop_toBottomOf="@id/img_image4"
+        app:layout_constraintLeft_toRightOf="@id/txt_employee4"
+        app:layout_constraintRight_toLeftOf="@id/txt_employee6"/>
+
+    <TextView
+        android:id="@+id/txt_employee6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roberts"
+        android:textSize="20sp"
+        android:textColor="#424040"
+        app:layout_constraintTop_toBottomOf="@id/img_image4"
+        app:layout_constraintLeft_toRightOf="@id/txt_employee5"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_position4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Executive Officer"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:textSize="18sp"
+        android:textColor="#5F5B5B"
+        app:layout_constraintTop_toBottomOf="@id/txt_employee4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/txt_position5"/>
+
+    <TextView
+        android:id="@+id/txt_position5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marketing"
+        android:textSize="18sp"
+        android:textColor="#5F5B5B"
+        app:layout_constraintTop_toBottomOf="@id/txt_employee4"
+        app:layout_constraintLeft_toRightOf="@id/txt_position4"
+        app:layout_constraintRight_toLeftOf="@id/txt_position6"/>
+
+    <TextView
+        android:id="@+id/txt_position6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Business Analyst"
+        android:textSize="18sp"
+        android:textColor="#5F5B5B"
+        app:layout_constraintTop_toBottomOf="@id/txt_employee4"
+        app:layout_constraintLeft_toRightOf="@id/txt_position5"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_mission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mission"
+        android:textSize="30sp"
+        android:textColor="#1B1A1A"
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_position6"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mission"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@id/txt_mission"
+        app:layout_constraintLeft_toLeftOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
